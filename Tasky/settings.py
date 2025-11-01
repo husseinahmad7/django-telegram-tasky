@@ -59,10 +59,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Core apps
-    'core_auth',
-    'core_bot',
-    'core_tasks',
+    # Core apps (required)
+    'core_auth',        # User authentication
+    'core_bot',         # Core bot functionality
+    'core_tasks',       # All models (Project, Task, Meeting, Approval, Alert, etc.)
+    # Feature apps (optional - can be disabled)
+    'core_projects',    # Project management handlers
+    'core_meetings',    # Meeting management handlers
+    'core_approvals',   # Approval workflow handlers
+    'core_notifications',  # Notification handlers
 ]
 
 MIDDLEWARE = [
