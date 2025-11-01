@@ -1,0 +1,46 @@
+[project]
+name = "tasky"
+version = "1.0.0"
+description = "Modern Telegram Bot for Company Project Management"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django>=5.2.7",
+    "djangorestframework>=3.14",
+    "python-telegram-bot[webhooks]>=21.0",
+    "uvicorn>=0.30",
+    "starlette>=0.37",
+    "python-dateutil>=2.9",
+    "python-dotenv>=1.0",
+    "pillow>=10.0",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-django>=4.8",
+    "pytest-asyncio>=0.23",
+    "black>=24.0",
+    "ruff>=0.5",
+]
+build = [
+    "pyinstaller>=6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 100
+target-version = ['py314']
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "Tasky.settings"
+python_files = ["test_*.py", "*_test.py"]
+

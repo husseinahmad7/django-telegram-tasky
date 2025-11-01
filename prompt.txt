@@ -1,0 +1,8 @@
+i have integrated telegram bot with django here, see Tasky\asgi.py
+also im using ngrok to test the bot by exposing the webhook
+please make me more modern look bot and more functionality that specialized in company project management and task focus, track progress, task assignment, draw path, track daily deadlines, weekly deadlines, reminders, meetings, meeting votes, combine learning sources, send approavals and alerts, those as managment app.
+can deal with users roles permissions and the group as core auth app.
+the project can be exported as executable to work locally also.
+separate the logic and make it reusable blocks, so i can use in other projects, and follow django style guide.
+please use python 3.14, sqlite, uv instead of pipenv, use genai only if needed, i want only MVP
+i have GEMINI_API_KEY, TELEGRAM_BOT_TOKEN in .env
